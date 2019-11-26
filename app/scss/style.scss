@@ -1,6 +1,9 @@
 @import 'vars';
 @import 'global';
 
+
+//START HEADER 
+
 .header_top{
     background-color: #eef1f3;
 }
@@ -120,3 +123,104 @@
         }
     }
 }
+
+//END HEADER
+
+//START SEARCH
+
+.search{
+    min-height: 725px;
+    background-color: #274acd;
+    position: relative;
+}
+.search__inner{
+    padding-top: 100px;
+    text-align: center;
+    color: #fff;
+    &-title{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+    margin-bottom: 45px;
+    span{
+        display: block;
+        font-weight: 400;
+        }
+    }
+    &-text{
+        font-size: 20px;
+        margin-bottom: 65px;
+    }
+    &-btn_box{
+        button{
+            height: 55px;
+            border: 1px solid #fff;
+            background-color: #fff;
+            border-radius: 50px;
+            margin-right: 30px;
+            padding: 0 30px;
+        }
+        .popular{
+            background-color: transparent;
+            color: #fff;
+        }
+    }
+}
+.search_box{
+    margin-top: 30px;
+    max-width: 1140px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+    padding: 40px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    transform: translateY(+50%);
+    .select{
+        display: inline-block;
+    }
+    input{
+        height: 55px;
+        border: 1px solid #dcdcdc;
+        max-width: 805px;
+        width: 100%;
+        border-radius: 4px;
+        padding: 0px 230px 0px 30px;
+        margin-right: 30px;
+    }
+    button{
+        height: 55px;
+        background-color: $blue;
+        border: none;
+        color: #fff;
+        width: 210px;
+        padding: 0px 10px 0px 10px;
+        border-radius: 4px;
+    }
+    &::after{
+    content: "";
+    position: absolute;
+    height: 20px;
+    max-width: 1110px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 6px;
+    bottom: 130px;
+    left: 15px;
+    }
+    &::before{
+    content: "";
+    position: absolute;
+    height: 50px;
+    max-width: 1080px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 6px;
+    bottom: 115px;
+    left: 30px;
+    }
+      
+}
+
+//END SEARCH
