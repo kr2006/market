@@ -1,5 +1,6 @@
 @import 'vars';
 @import 'global';
+@import 'fonts';
 
 
 //START HEADER 
@@ -224,3 +225,196 @@
 }
 
 //END SEARCH
+
+
+//START ADVANTAGES
+
+.advantages{
+    padding: 180px 0px 120px;
+    background-color: #fdfdfd;
+}
+.advantages__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.advantages__item{
+    padding: 40px 35px 50px;
+    text-align: center;
+    span{
+        display: block;
+    }
+    &-title{
+        font-size: 24px;
+        font-weight: 500;
+        color: #000;
+        margin-bottom: 30px;
+    }
+    &-text{
+        line-height: 30px;
+    }
+    img{
+        margin-bottom: 40px;
+        max-height: 113px;
+    }
+    &:hover{
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        transition: all .3s;
+    }
+}
+
+
+//END ADVANTAGES
+//START WEERLY PRODUCTS
+.weekly_products{
+    background-color: #eff1f5;
+    padding: 120px 0px;
+}
+.weekly_products__top{
+    background-color: #fff;
+    padding: 35px 30px 30px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);     
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.weekly_products{
+    .weekly_products-item{
+    display: flex !important;
+    justify-content: space-between;
+    }
+    &-img{
+        max-width: 550px;
+        width: 100%;
+        min-height: 450px;
+        background-color: #4e5760;
+    }
+    &-info{
+        background-color: #fff;
+        width: 100%;
+        padding: 50px 50px 25px;
+    }
+    &-title{
+        font-size: 24px;
+        color: #000;
+        margin-bottom: 20px;
+    }
+    &-category{
+        display: flex;
+        align-content: center;
+        margin-bottom: 30px;
+        a{
+            color: #000;
+            margin-right: 20px;
+        }
+        span{
+            padding-left: 25px;
+            color: $purple;
+            position: relative;
+            &::before{
+                font-family: 'icomoon';
+                content: "\f19a";
+                color: $purple;
+                font-size: 15px;
+                position: absolute;
+                left: 0;
+            }
+        }
+        
+    }
+    &-descr{
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 25px;
+    }
+    .weekly_products-avatar{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: $purple;
+        margin-right: 10px;
+    }
+    &-btn-box button{
+        padding: 8px 15px;
+        border: none;
+        background-color: #f1f3f6;
+        margin-left: 7px;
+        margin-bottom: 45px;
+        border-radius: 25px;
+        color: $text;
+    }
+    &-rate{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        border-top: 1px solid #868c96;
+        button{
+            border-radius: 25px;
+            background-color: $blue;
+            color: #fff;
+            padding: 9px 14px;
+            margin-right: 20px;
+            border: none;
+        }
+        .rate_likes{
+            margin-right: 20px;
+            padding-left: 25px;
+            position: relative;
+            &::before{
+                content: '\f08a';
+                font-family: 'icomoon';
+                position: absolute;
+                left: 0;
+                bottom: -1px;
+                color: $purple;
+            }
+        }
+        .rate_carts{
+            color: $blue;
+            padding-left: 25px;
+            position: relative;
+            &::before{
+                content: '\f07a';
+                font-family: 'icomoon';
+                position: absolute;
+                left: 0;
+                bottom: -1px;
+            }
+        }
+        .rate__stars{
+            display: inline-block;
+            height: 10px;
+            width: 50px;
+            svg{
+                margin-right: 2px;
+            }
+        }
+    }
+}
+.slick__btn-container{
+    max-width: 110px;
+    width: 100%;
+    padding: 15px 25px;
+    background-color: $purple;
+    border-radius: 25px;
+    position: relative;
+}
+.slick-prev, .slick-next{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 0;
+}
+.weekly_products__top{
+    display: flex;
+    justify-content: space-between;
+}
+
+//END WEEKLY PRODUCTS
+
